@@ -1,6 +1,7 @@
 using BaseDatosContext;
 using Entidades;
 using Microsoft.EntityFrameworkCore;
+using Negocio;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,9 @@ builder.Services.AddDbContext<TorneoContext>(opciones =>
 {
     opciones.UseSqlServer(builder.Configuration.GetConnectionString("LocalConnection"));
 });
+
+builder.Services.AddScoped<ImageService>();
+
 
 var app = builder.Build();
 

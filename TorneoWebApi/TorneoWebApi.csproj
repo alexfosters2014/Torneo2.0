@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BaseDatosContext\BaseDatosContext.csproj" />
+    <ProjectReference Include="..\Negocio\Negocio.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,17 @@
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\bin\Debug\net7.0\BaseDatosContext.deps.json
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\bin\Debug\net7.0\BaseDatosContext.runtimeconfig.json
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\bin\Debug\net7.0\BaseDatosContext.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\bin\Debug\net7.0\BaseDatosContext.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\bin\Debug\net7.0\Entidades.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\bin\Debug\net7.0\Entidades.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\BaseDatosContext.csproj.AssemblyReference.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\BaseDatosContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\BaseDatosContext.AssemblyInfoInputs.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\BaseDatosContext.AssemblyInfo.cs
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\BaseDatosContext.csproj.CoreCompileInputs.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\BaseDatosContext.csproj.CopyComplete
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\BaseDatosContext.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\refint\BaseDatosContext.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\BaseDatosContext.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\BaseDatosContext.genruntimeconfig.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\BaseDatosContext\obj\Debug\net7.0\ref\BaseDatosContext.dll

@@ -1,0 +1,4 @@
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\.vs
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\.vs
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin

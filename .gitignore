@@ -2,4 +2,9 @@
 # Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
 ################################################################################
 
+<<<<<<< HEAD
+=======
+/.vs/Torneo2.0/FileContentIndex/ef7eb245-cfbc-481c-8e97-a1b33799c63c.vsidx
+/.vs/Torneo2.0/FileContentIndex/74aaee11-8af0-4db8-889b-313174e75437.vsidx
+>>>>>>> ok
 /.vs/Torneo2.0/FileContentIndex

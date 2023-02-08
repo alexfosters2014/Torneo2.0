@@ -4,17 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Negocio
 {
     public class ImageService
     {
-        public async Task<string> UploadImage(string keyAzureBlob, string storageNameAzureBlob, byte[] imagen)
+        public async Task<string> UploadImage(string keyAzureBlob, string storageNameAzureBlob, byte[] image)
         {
             try
             {
-                var imagenStream = new MemoryStream();
-                await imagenStream.WriteAsync(imagen);
+                await using var imagenStream = new MemoryStream();
+                await imagenStream.WriteAsync(image);
                 imagenStream.Position = 0;
 
                 string imageName = Guid.NewGuid().ToString() + ".jpg";
@@ -32,12 +33,12 @@ namespace Negocio
             }
         }
 
-        public async Task<string> UpdateImage(string keyAzureBlob, string storageNameAzureBlob, byte[] imagen, string nombreArchivo)
+        public async Task<string> UpdateImage(string keyAzureBlob, string storageNameAzureBlob, byte[] image,string nombreArchivo)
         {
             try
             {
-                var imagenStream = new MemoryStream();
-                await imagenStream.WriteAsync(imagen);
+                await using var imagenStream = new MemoryStream();
+                await imagenStream.WriteAsync(image);
                 imagenStream.Position = 0;
 
                 string imageName = Guid.NewGuid().ToString() + ".jpg";
@@ -61,7 +62,7 @@ namespace Negocio
             }
         }
 
-        public async Task EliminarImagen(BlobClient blob)
+        private async Task EliminarImagen(BlobClient blob)
         {
             try
             {

@@ -26,7 +26,7 @@ namespace Negocio.Validaciones
         }
         private bool EquipoNoExiste(string nombreEquipo)
         {
-            return _db.Equipos.Any(c => c.NombreEquipo == nombreEquipo);
+            return !_db.Equipos.Any(c => c.NombreEquipo == nombreEquipo);
         }
         private bool CantidadJugadoresCorrecto(Equipo equipo, string deporte)
         {

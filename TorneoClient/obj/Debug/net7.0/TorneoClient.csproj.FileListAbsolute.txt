@@ -826,3 +826,11 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\Torne
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\refint\TorneoClient.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\ref\TorneoClient.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Entidades.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Entidades.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Entidades.dll.gz
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Entidades.pdb.gz
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\Entidades.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\Entidades.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\TuiHfPWt.gz
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\v+n9mY8x.gz

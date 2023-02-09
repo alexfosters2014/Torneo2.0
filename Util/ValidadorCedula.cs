@@ -4,6 +4,7 @@
     {
         public static bool Validar(string cedula)
         {
+            try { 
             int cedulaNumerica = Int32.Parse(cedula);
 
             int cedulaSinDigitoVerificador = cedulaNumerica / 10;
@@ -12,7 +13,11 @@
             int VerificadorRecursivo = DigitoVerificadorRecursivo(cedulaSinDigitoVerificador);
 
             return VerificadorRecursivo == digitoVerificador;
-
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
         }
         private static int DigitoVerificadorRecursivo(int cedulaSinDigitoVerificador, int semilla = 2987634, int suma = 0)
         {

@@ -43,7 +43,10 @@ if (app.Environment.IsDevelopment())
 app.UseCors("cors");
 app.UseHttpsRedirection();
 
+//Configuración de Endpoints
 app.MapImageEndpoints();
+app.MapJugadoresEndpoints();
+app.MapEquiposEndpoints();
 
 app.Run();
 

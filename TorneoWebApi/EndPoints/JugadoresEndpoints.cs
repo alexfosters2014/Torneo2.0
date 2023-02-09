@@ -7,7 +7,8 @@ namespace TorneoWebApi.EndPoints
     {
         public static void MapJugadoresEndpoints(this WebApplication app)
         {
-          
+            app.MapGet("/Jugador/Get/{cedula}", GetJugador);
+            app.MapPost("/Jugador/Nuevo", NuevoJugador);
         }
 
         public static async Task<IResult> GetJugador(JugadoresService jugadorService, string cedula)
@@ -30,7 +31,7 @@ namespace TorneoWebApi.EndPoints
             try
             {
                 var resultado = await jugadorService.NuevoJugador(jugador);
-                if (resultado == null) return Results.BadRequest("No ");
+                if (resultado == null) return Results.BadRequest("No se pudo procesar su solicitud");
 
                 if (resultado <= 0) return Results.BadRequest("No se pudo ingresar al jugador");
 

@@ -86,3 +86,5 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Fluen
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\System.IO.Hashing.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Negocio.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Negocio.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Util.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Util.pdb

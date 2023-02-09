@@ -1,17 +1,26 @@
-﻿@inherits LayoutComponentBase
+﻿@using Blazored.Toast.Configuration;
+@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+<div class="headerMenu">
+    <NavMenu />
+   
+</div>
+<div style="height:50px;width:auto">
+</div>  
+
+       
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
+      
+        <article class="myBody px-4">
             @Body
         </article>
     </main>
-</div>
+
+
+
+<BlazoredToasts Position="ToastPosition.TopCenter"
+                IconType="IconType.FontAwesome"
+                SuccessClass="success-toast-override"
+                SuccessIcon="fa fa-thumbs-up"
+                ErrorIcon="fa fa-bug" />

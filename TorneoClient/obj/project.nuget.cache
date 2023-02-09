@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HqE7lIaInUXHyMzwEtnfUPxzdWSKOs/MSgk9o84hVbRDv0GzONikz5hb+SUSs3gkSF32O33durcjHtzKmExYTw==",
+  "dgSpecHash": "X2N7erAwlPXIWB9LGdnOFWkOuJ4FiOR6ec1vJEjUBubyifGuFVotTjXP116HYtx5wATmjc0JpjBXG45P0o7Wfg==",
   "success": true,
   "projectFilePath": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\TorneoClient.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\alexf\\.nuget\\packages\\blazored.modal\\7.1.0\\blazored.modal.7.1.0.nupkg.sha512",
+    "C:\\Users\\alexf\\.nuget\\packages\\blazored.toast\\4.0.0\\blazored.toast.4.0.0.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.2\\microsoft.aspnetcore.authorization.7.0.2.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.2\\microsoft.aspnetcore.components.7.0.2.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.2\\microsoft.aspnetcore.components.analyzers.7.0.2.nupkg.sha512",
@@ -28,6 +30,9 @@
     "C:\\Users\\alexf\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\microsoft.jsinterop\\7.0.2\\microsoft.jsinterop.7.0.2.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.2\\microsoft.jsinterop.webassembly.7.0.2.nupkg.sha512",
+    "C:\\Users\\alexf\\.nuget\\packages\\mudblazor\\6.1.8\\mudblazor.6.1.8.nupkg.sha512",
+    "C:\\Users\\alexf\\.nuget\\packages\\mudblazor.thememanager\\1.0.7\\mudblazor.thememanager.1.0.7.nupkg.sha512",
+    "C:\\Users\\alexf\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",

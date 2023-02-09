@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Yg7BcPQnKb86AV9RcwfhD6r+NXI5QgeuA6qniDNGbcEEU5Peo4IxzQtSWIdBxUN0GZLRXxfXVLZb5h2fqJ48UQ==",
+  "dgSpecHash": "wjUWCrGGnWiU8Skg/ofRUqhfdzYTRqxo1fV0vsCv2KolKLTki5sXqcLI+OqZ4lcXP4QTaKr4AofcjEhNgFOuhg==",
   "success": true,
   "projectFilePath": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoWebApi\\TorneoWebApi.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\alexf\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\azure.storage.blobs\\12.14.1\\azure.storage.blobs.12.14.1.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\azure.storage.common\\12.13.0\\azure.storage.common.12.13.0.nupkg.sha512",
-    "C:\\Users\\alexf\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\alexf\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\alexf\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

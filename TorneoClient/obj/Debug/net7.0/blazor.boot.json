@@ -198,13 +198,15 @@
       "mscorlib.dll": "sha256-T52Qf1cS\/UysEoWOoE2ptEJEXfGpanQX5KNLyDiLv1E=",
       "netstandard.dll": "sha256-p32h5P3QmHJ\/FGoeE6m7f5g\/8ng2PSPGZktHyMadvIs=",
       "System.Private.CoreLib.dll": "sha256-6MwQcyKbqBsoZYOcD9fQJ4iKcn1qMmWRWVEkU2LLCb0=",
-      "TorneoClient.dll": "sha256-oBpy+bx\/qqfkNzaBQyu4blCsUXVf78NCyzSxdwqDpAg="
+      "Entidades.dll": "sha256-70AoPC29za3sPOYXcW5V8aV9yEoqBKPH9ChB\/yTPbxM=",
+      "TorneoClient.dll": "sha256-byu0YjTPGsAuhXTL9BIBeuJB9oUhM4mKEbNtpeY73DM="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "TorneoClient.pdb": "sha256-xB63dyuHpyDSWsVIi9D2KOgND3UizEctQ1WAW2kjk38="
+      "Entidades.pdb": "sha256-yMAgdxh6iQCM7BgoQ6Bgb7\/LmKNfWRcmvnOAwpouwQI=",
+      "TorneoClient.pdb": "sha256-QBQQdZ5D1vDE1TUeAUx8GVCofrlMDIMhKvQ0G1uR4ZU="
     },
     "runtime": {
       "dotnet.7.0.2.h472s9d0n7.js": "sha256-4mh03qTse0uNR+dQ6ydExm4jJXph0RE8zGNCtF0jiNA=",

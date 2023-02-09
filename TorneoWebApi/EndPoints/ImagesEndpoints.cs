@@ -15,8 +15,6 @@ namespace TorneoWebApi.EndPoints
             app.MapPost("/Image/Upload",UploadImage);
             app.MapPost("/Image/Update",UpdateImage);
 
-            //app.MapPost("/Image/Upload", (HttpRequest request) => UploadImage);
-            //app.MapPost("/Image/Update", (HttpRequest request) => UpdateImage);
         }
 
         public static async Task<IResult> UploadImage(ImageService serviceImage, HttpRequest request)

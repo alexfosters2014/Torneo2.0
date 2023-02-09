@@ -27,6 +27,8 @@ builder.Services.AddDbContext<TorneoContext>(opciones =>
 });
 
 builder.Services.AddScoped<ImageService>();
+builder.Services.AddScoped<EquiposService>();
+builder.Services.AddScoped<JugadoresService>();
 
 
 var app = builder.Build();
@@ -41,7 +43,10 @@ if (app.Environment.IsDevelopment())
 app.UseCors("cors");
 app.UseHttpsRedirection();
 
+//Configuración de Endpoints
 app.MapImageEndpoints();
+app.MapJugadoresEndpoints();
+app.MapEquiposEndpoints();
 
 app.Run();
 

@@ -14,7 +14,7 @@ namespace TorneoClient.DataService
             this._httpClient = _httpClient;
         }
 
-        public async Task<List<Equipo>> GetTorneosSegunDeporte(string deporte)
+        public async Task<List<Torneo>> GetTorneosSegunDeporte(string deporte)
         {
             try
             {
@@ -27,7 +27,7 @@ namespace TorneoClient.DataService
                 }
 
                 var content = await response.Content.ReadAsStringAsync();
-                var resultado = JsonConvert.DeserializeObject <List<Equipo>> (content);
+                var resultado = JsonConvert.DeserializeObject <List<Torneo>> (content);
                 return resultado;
 
             }

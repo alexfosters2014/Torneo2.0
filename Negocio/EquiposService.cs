@@ -24,6 +24,11 @@ namespace Negocio
             return await _db.Equipos.FindAsync(id);
         }
 
+        public async Task<List<Equipo>> GetsEquiposPorNombre(string nombre)
+        {
+            return await _db.Equipos.Where(w => w.NombreEquipo == nombre.ToUpper().Trim()).ToListAsync();
+        }
+
         public async Task<int> NuevoEquipo(Equipo equipo)
         {
             try

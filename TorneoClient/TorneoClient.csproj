@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Componentes\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 

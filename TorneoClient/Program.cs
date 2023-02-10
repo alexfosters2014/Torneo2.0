@@ -21,6 +21,7 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddScoped<DataServiceEquipo>();
 builder.Services.AddScoped<DataServiceImagen>();
 builder.Services.AddScoped<DataServiceJugador>();
+builder.Services.AddScoped<DataServiceInscripcion>();
 
 
 await builder.Build().RunAsync();

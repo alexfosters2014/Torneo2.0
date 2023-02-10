@@ -57,5 +57,30 @@ namespace TorneoClient.DataService
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<List<Equipo>> GetsEquiposPorNombre(string nombre)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"/Equipo/Get/Find/{nombre}");
+                if (!response.IsSuccessStatusCode)
+                {
+                    var contentError = await response.Content.ReadAsStringAsync();
+                    var error = JsonConvert.DeserializeObject<string>(contentError);
+                    throw new Exception(error);
+                }
+
+                var content = await response.Content.ReadAsStringAsync();
+                var resultado = JsonConvert.DeserializeObject<List<Equipo>>(content);
+                return resultado;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
     }
 }

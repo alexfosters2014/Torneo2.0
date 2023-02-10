@@ -29,6 +29,7 @@ builder.Services.AddDbContext<TorneoContext>(opciones =>
 builder.Services.AddScoped<ImageService>();
 builder.Services.AddScoped<EquiposService>();
 builder.Services.AddScoped<JugadoresService>();
+builder.Services.AddScoped<TorneoService>();
 
 
 var app = builder.Build();

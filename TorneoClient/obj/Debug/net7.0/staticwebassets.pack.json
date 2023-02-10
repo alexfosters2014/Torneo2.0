@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\TorneoClient.styles.css"
     },
     {
+      "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\css\\General.css",
+      "PackagePath": "staticwebassets\\css\\General.css"
+    },
+    {
+      "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\css\\Nav.css",
+      "PackagePath": "staticwebassets\\css\\Nav.css"
+    },
+    {
+      "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\css\\TorneoBoxCss.css",
+      "PackagePath": "staticwebassets\\css\\TorneoBoxCss.css"
+    },
+    {
       "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -23,6 +39,10 @@
     {
       "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\css\\estiloFormEquipoNuevo.css",
+      "PackagePath": "staticwebassets\\css\\estiloFormEquipoNuevo.css"
     },
     {
       "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
@@ -67,6 +87,22 @@
     {
       "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\img\\TorneoSeleccion\\dobleElim.png",
+      "PackagePath": "staticwebassets\\img\\TorneoSeleccion\\dobleElim.png"
+    },
+    {
+      "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\img\\TorneoSeleccion\\elimDirecta.png",
+      "PackagePath": "staticwebassets\\img\\TorneoSeleccion\\elimDirecta.png"
+    },
+    {
+      "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\img\\componentes\\add.png",
+      "PackagePath": "staticwebassets\\img\\componentes\\add.png"
+    },
+    {
+      "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\img\\componentes\\upload.png",
+      "PackagePath": "staticwebassets\\img\\componentes\\upload.png"
     },
     {
       "Id": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\wwwroot\\index.html",

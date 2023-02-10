@@ -30,7 +30,7 @@ namespace Negocio.Validaciones
 
         private bool ValidarCedula(string cedula)
         {
-            return ValidadorCedula.Validar(cedula);
+            return ValidadorCedula.Validar(cedula.Trim());
         }
 
         private bool ValidarEdad(DateTime fechaNacimiento)
@@ -41,7 +41,7 @@ namespace Negocio.Validaciones
 
         private bool JugadorNoExiste(string cedula)
         {
-            return !_db.Jugadores.Any(c => c.Cedula == cedula);
+            return !_db.Jugadores.Any(c => c.Cedula == cedula.Trim());
         }
 
 

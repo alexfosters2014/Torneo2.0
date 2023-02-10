@@ -1,12 +1,16 @@
 {
   "cacheBootResources": true,
-  "config": [ ],
+  "config": [
+    "appsettings.json"
+  ],
   "debugBuild": true,
   "entryAssembly": "TorneoClient",
   "icuDataMode": 0,
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.Modal.dll": "sha256-Sr30UiM7JErBe8hojY6HAgaOOgfQE5zHijI0uVypmkM=",
+      "Blazored.Toast.dll": "sha256-SuOfw+qC7\/4CVq+xV73h6uI+07VR1bgNUa2pNOlX9Yo=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-z4GZC8zBP0+3qTsoIBdCEOvwWaWDTpt8U1vr1aLEkI4=",
       "Microsoft.AspNetCore.Components.dll": "sha256-2+8AH28qnJdxAcSZ0HYdiGuZzHwXNI1gFtZz71zMhDc=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-9hS0lH\/KHwdR5UrpgTsTuXn3Q25Lo5YfMdkNS9eU2gk=",
@@ -29,6 +33,9 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-q4ruoDSCjV\/QJY9ZkzV6uxvEvZUVrDbyUjU3SSh5SlE=",
       "Microsoft.JSInterop.dll": "sha256-NEVAdeszc3znLkYaJmx+GGKymfJY7FxK8dPfcsfwIMg=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-29PjAuoFwhjBLr05a8f687e+zt8FQ910ALzJS7iF8AA=",
+      "MudBlazor.dll": "sha256-hDo2YBu\/wpW72LgguZpKycJ2\/CY4nOyFKL8kAJ0DLhk=",
+      "MudBlazor.ThemeManager.dll": "sha256-q0jowCEAkyFG4Njov0GzcEMKepLOyZ+qv8Rv1TEm0Bg=",
+      "Newtonsoft.Json.dll": "sha256-SBbEJ29XXk2FuAYzoN8urfKUlv4AvcM814Q+YTc73g4=",
       "System.IO.Pipelines.dll": "sha256-P\/MqD0fCBd5bgTM16JC1QC\/Zz7s+CwViyzmDFkBG4\/c=",
       "Microsoft.CSharp.dll": "sha256-FWCuPmOmgiOH+yf8assJ\/zkmP3u3UlIr0cEz22mW9rE=",
       "Microsoft.VisualBasic.Core.dll": "sha256-\/T9+8W0Fs9hs8GrzSVqvcqV7hSNQ4Iq0krkIjT77UZU=",
@@ -199,14 +206,16 @@
       "netstandard.dll": "sha256-p32h5P3QmHJ\/FGoeE6m7f5g\/8ng2PSPGZktHyMadvIs=",
       "System.Private.CoreLib.dll": "sha256-6MwQcyKbqBsoZYOcD9fQJ4iKcn1qMmWRWVEkU2LLCb0=",
       "Entidades.dll": "sha256-70AoPC29za3sPOYXcW5V8aV9yEoqBKPH9ChB\/yTPbxM=",
-      "TorneoClient.dll": "sha256-byu0YjTPGsAuhXTL9BIBeuJB9oUhM4mKEbNtpeY73DM="
+      "Util.dll": "sha256-fhFzcR3ggqvfoZjBkBYohR+7qNA\/daRM2rPx4jWr+Eo=",
+      "TorneoClient.dll": "sha256-yvCqNlbhW4ze5K2KRdkNyu8u82jiUU2tRiWwez0VsMk="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Entidades.pdb": "sha256-yMAgdxh6iQCM7BgoQ6Bgb7\/LmKNfWRcmvnOAwpouwQI=",
-      "TorneoClient.pdb": "sha256-QBQQdZ5D1vDE1TUeAUx8GVCofrlMDIMhKvQ0G1uR4ZU="
+      "Util.pdb": "sha256-3eGkeW7WjTYoRTeyNTgpDO7BPZVbD3T0no0Vz+0zdgM=",
+      "TorneoClient.pdb": "sha256-aAZHrLCcrI3wDwWx+V0vCbjf6wrL2UqyI0hrnBoO8Ag="
     },
     "runtime": {
       "dotnet.7.0.2.h472s9d0n7.js": "sha256-4mh03qTse0uNR+dQ6ydExm4jJXph0RE8zGNCtF0jiNA=",

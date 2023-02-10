@@ -20,20 +20,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/Componentes/AddJugador.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50ZXNcQWRkSnVnYWRvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/Componentes/JugadorEnEquipo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50ZXNcSnVnYWRvckVuRXF1aXBvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/Componentes/TorneoBoxSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50ZXNcVG9ybmVvQm94U2VsZWN0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/Pages/CreacionTorneos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYWNpb25Ub3JuZW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/Pages/NuevoEquipoPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldm9FcXVpcG9QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alexf/OneDrive/Escritorio/Torneo2.0/TorneoClient/_Imports.razor]

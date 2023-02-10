@@ -7,6 +7,11 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Torne
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\TorneoWebApi.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Azure.Storage.Common.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Humanizer.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -36,6 +41,7 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Syste
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\System.IO.Hashing.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\System.Memory.Data.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\System.Runtime.Caching.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
@@ -55,8 +61,12 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\runti
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\BaseDatosContext.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Entidades.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Negocio.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Util.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\BaseDatosContext.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Negocio.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Entidades.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Util.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\obj\Debug\net7.0\TorneoWebApi.csproj.AssemblyReference.cache
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\obj\Debug\net7.0\TorneoWebApi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\obj\Debug\net7.0\TorneoWebApi.AssemblyInfoInputs.cache
@@ -78,13 +88,3 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\obj\Debug\net7.0\refin
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\obj\Debug\net7.0\TorneoWebApi.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\obj\Debug\net7.0\TorneoWebApi.genruntimeconfig.cache
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\obj\Debug\net7.0\ref\TorneoWebApi.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Azure.Storage.Blobs.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Azure.Storage.Common.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\FluentValidation.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\System.IO.Hashing.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Negocio.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Negocio.pdb
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Util.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoWebApi\bin\Debug\net7.0\Util.pdb

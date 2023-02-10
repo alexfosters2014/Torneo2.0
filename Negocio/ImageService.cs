@@ -10,6 +10,8 @@ namespace Negocio
 {
     public class ImageService
     {
+
+        private string _extension = ".png";
         public async Task<string> UploadImage(string keyAzureBlob, string storageNameAzureBlob, byte[] image)
         {
             try
@@ -18,7 +20,7 @@ namespace Negocio
                 await imagenStream.WriteAsync(image);
                 imagenStream.Position = 0;
 
-                string imageName = Guid.NewGuid().ToString() + ".jpg";
+                string imageName = Guid.NewGuid().ToString() + _extension;
 
                 BlobContainerClient blobContainer = new BlobContainerClient(keyAzureBlob, storageNameAzureBlob);
                 var blob = blobContainer.GetBlobClient(imageName);
@@ -33,7 +35,7 @@ namespace Negocio
             }
         }
 
-        public async Task<string> UpdateImage(string keyAzureBlob, string storageNameAzureBlob, byte[] image,string nombreArchivo)
+        public async Task<string> UpdateImage(string keyAzureBlob, string storageNameAzureBlob, byte[] image,string nombreArchivoAnterior)
         {
             try
             {
@@ -41,12 +43,12 @@ namespace Negocio
                 await imagenStream.WriteAsync(image);
                 imagenStream.Position = 0;
 
-                string imageName = Guid.NewGuid().ToString() + ".jpg";
+                string imageName = Guid.NewGuid().ToString() + _extension;
 
                 BlobContainerClient blobContainer = new BlobContainerClient(keyAzureBlob, storageNameAzureBlob);
 
 
-                var blobAEliminar = blobContainer.GetBlobClient(nombreArchivo);
+                var blobAEliminar = blobContainer.GetBlobClient(nombreArchivoAnterior);
                 await EliminarImagen(blobAEliminar);
 
 

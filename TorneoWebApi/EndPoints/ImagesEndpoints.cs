@@ -33,9 +33,9 @@ namespace TorneoWebApi.EndPoints
         {
             if (!request.Form.Files.Any()) return Results.BadRequest("No ha seleccionado ninguna imagen");
 
-            var stream = await GetBytes(request.Form.Files[0]);
+            byte[] stream = await GetBytes(request.Form.Files[0]);
 
-            var resultado = serviceImage.UpdateImage(_keyAzureStorage, _storageNameAzure, stream, request.Form.Files[0].FileName);
+            string resultado = await serviceImage.UpdateImage(_keyAzureStorage, _storageNameAzure, stream, request.Form.Files[0].FileName);
             if (resultado == null) return Results.NoContent();
 
             return Results.Ok(resultado);

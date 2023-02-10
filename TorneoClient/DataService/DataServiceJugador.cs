@@ -18,7 +18,7 @@ namespace TorneoClient.DataService
             try
             {
                 var response = await _httpClient.GetAsync($"/Jugador/Get/{cedula}");
-                if (!response.IsSuccessStatusCode) 
+                if (!response.IsSuccessStatusCode)
                 {
                     var contentError = await response.Content.ReadAsStringAsync();
                     var error = JsonConvert.DeserializeObject<string>(contentError);
@@ -30,7 +30,7 @@ namespace TorneoClient.DataService
                 return resultado;
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

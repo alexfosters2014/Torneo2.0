@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YHSmbc1RABVuKIzrK65qUB8ogCYV3SsecsuJWRsXgq0=",
+  "Source": "TorneoWebApi",
+  "BasePath": "_content/TorneoWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

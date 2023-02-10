@@ -1,8 +1,6 @@
 ﻿@page "/nuevo/equipo"
-@using System.Buffers.Text;
-@using Grpc.Core;
-@inject ImagenService imagenService;
-@inject EquipoService equipoService;
+@inject DataServiceImagen dataServiceImagen;
+@inject DataServiceEquipo dataServiceEquipo;
 @inject IToastService toast;
 
 
@@ -23,9 +21,9 @@
             <td colspan="2" style="width:10vw">
                 <select @bind="@limiteJugadores">
                         <option value="0" selected>Seleccionar un tipo de torneo</option>
-                    @foreach (string key in Util.TipoTorneo.Keys)
+                    @foreach (string key in Diccionarios.TipoTorneo.Keys)
                     {
-                        <option value="@Util.TipoTorneo[key]">@key</option>
+                        <option value="@Diccionarios.TipoTorneo[key]">@key</option>
                     }
                 </select>
              </td>
@@ -59,7 +57,7 @@
 
     [CascadingParameter] IModalService Modal { get; set; } = default!;
 
-    EquipoReply Equipo = new EquipoReply();
+    Equipo Equipo = new();
     int limiteJugadores = 0;
 
     bool VisualizarAgregarJugador = false;
@@ -68,9 +66,10 @@
     {
         try
         {
-            bool resultado = await equipoService.CrearEquipo(Equipo);
-            if (resultado)
+            int resultado = await dataServiceEquipo.NuevoEquipo(Equipo);
+            if (resultado > 0)
             {
+                Equipo.Id = resultado;
                 toast.ShowSuccess("Equipo creado correctamente");
             }
             else
@@ -80,8 +79,7 @@
         }
         catch (Exception ex)
         {
-
-            throw;
+            toast.ShowError(ex.Message);
         }
 
     }
@@ -100,12 +98,12 @@
 
         if (result.Confirmed)
         {
-            var jugador = (JugadorReply)result.Data;
-           await AgregarJugador(jugador);
+            var jugador = (Jugador)result.Data;
+            await AgregarJugador(jugador);
         }
     }
 
-    private async Task AgregarJugador(JugadorReply jugadorAsignado)
+    private async Task AgregarJugador(Jugador jugadorAsignado)
     {
         VisualizarAgregarJugador = false;
         if (jugadorAsignado != null)
@@ -126,13 +124,15 @@
     private async Task CambioImagenFile(InputFileChangeEventArgs e)
     {
         try{
-            Equipo.Caratula = string.IsNullOrEmpty(Equipo.Caratula) ? await imagenService.SubirImagenFile(e) :
-                                                                      await imagenService.ActualizarImagenFile(e,Equipo.Caratula);
+            Equipo.Caratula = string.IsNullOrEmpty(Equipo.Caratula) ? await dataServiceImagen.SubirImagenFile(e) :
+                                                                      await dataServiceImagen.ActualizarImagenFile(e, Equipo.Caratula);
+
+            StateHasChanged();
 
         }
-        catch (RpcException ex)
+        catch (Exception ex)
         {
-            Console.WriteLine(ex.Message);
+            toast.ShowError(ex.Message);
         }
     }
 

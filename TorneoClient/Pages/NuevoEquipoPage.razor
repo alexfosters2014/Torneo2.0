@@ -19,11 +19,11 @@
         <tr>
             <td>Tipo Torneo</td>
             <td colspan="2" style="width:10vw">
-                <select @bind="@limiteJugadores">
+                <select @onchange="CambioDeporte">
                         <option value="0" selected>Seleccionar un tipo de torneo</option>
                     @foreach (string key in Diccionarios.TipoTorneo.Keys)
                     {
-                        <option value="@Diccionarios.TipoTorneo[key]">@key</option>
+                        <option value="@key">@key</option>
                     }
                 </select>
              </td>
@@ -145,7 +145,12 @@
         return linkImagen;
     }
 
- 
+    void CambioDeporte(ChangeEventArgs e)
+    {
+        string deporteSeleccionado = e.Value.ToString();
+        Equipo.Deporte = deporteSeleccionado;
+        limiteJugadores = Diccionarios.TipoTorneo[deporteSeleccionado];
+    }
 
    
 

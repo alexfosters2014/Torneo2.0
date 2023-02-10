@@ -40,6 +40,8 @@ namespace Negocio
 
                 equipo.Jugadores.ForEach(jugador =>  _db.Entry(jugador).State = EntityState.Unchanged);
 
+                equipo.NombreEquipo.ToUpper().Trim();
+
                 var nuevo = await _db.AddAsync(equipo);
                 await _db.SaveChangesAsync();
 

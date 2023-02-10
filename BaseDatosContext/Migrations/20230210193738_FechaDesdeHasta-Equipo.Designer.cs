@@ -4,6 +4,7 @@ using BaseDatosContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BaseDatosContext.Migrations
 {
     [DbContext(typeof(TorneoContext))]
-    partial class TorneoContextModelSnapshot : ModelSnapshot
+    [Migration("20230210193738_FechaDesdeHasta-Equipo")]
+    partial class FechaDesdeHastaEquipo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -93,10 +96,6 @@ namespace BaseDatosContext.Migrations
                     b.Property<int>("LocalId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Lugar")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("MarcadorLocal")
                         .HasColumnType("int");
 
@@ -156,6 +155,10 @@ namespace BaseDatosContext.Migrations
 
                     b.Property<DateTime>("Hasta")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Lugar")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Modalidad")
                         .IsRequired()

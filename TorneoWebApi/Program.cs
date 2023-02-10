@@ -47,6 +47,7 @@ app.UseHttpsRedirection();
 app.MapImageEndpoints();
 app.MapJugadoresEndpoints();
 app.MapEquiposEndpoints();
+app.MapTorneosEndpoints();
 
 app.Run();
 

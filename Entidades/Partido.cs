@@ -27,6 +27,7 @@ namespace Entidades
         public string NombreCancha { get; set; } = null!;
         public DateTime Fecha { get; set; }
         public int Posición { get; set; }
-        public string HistorialPartido { get; set; } = null!; 
+        public string HistorialPartido { get; set; } = null!;
+        public string Lugar { get; set; }
     }
 }

@@ -10,7 +10,7 @@
     <table>
         <tr>
             <td>Selecciona tu equipo</td>
-            <td><input type="text" value="@equipo.NombreEquipo"/></td>
+            <td>@equipo.NombreEquipo</td>
             <td><button @onclick="ShowBuscadorEquipo">Buscar</button></td>
         </tr>
 
@@ -19,19 +19,15 @@
             <td>Selecciona el torneo</td>
             <td colspan="3"></td>
         </tr>
-        @foreach (var item in torneos)
-        {
             <td colspan="2" style="width:10vw">
                     <select @onchange="CambioTorneo">
                                <option value="0" selected>Seleccionar un torneo</option>
-                            @foreach (string key in Diccionarios.TipoTorneo.Keys)
+                            @foreach (var torneo in torneosParaInscripcion)
                             {
-                               <option value="@key">@key</option>
+                               <option value="@torneo.TorneoId">@torneo.Nombre</option>
                             }
                     </select>
             </td>
-        }
-
     </table>
 
 </div>
@@ -46,8 +42,9 @@
 
     [CascadingParameter] IModalService Modal { get; set; } = default!;
 
-    List<Torneo> torneos = new();
-    Torneo torneo = new();
+    List<ViewModelTorneosInscripcion> torneosParaInscripcion = new();
+
+    ViewModelTorneosInscripcion torneo = new();
     Equipo equipo =new();
 
 
@@ -61,33 +58,46 @@
         if (result.Confirmed)
         {
             equipo = (Equipo)result.Data;
-            torneo = new();
             await ActualizarListaTorneos(equipo.Deporte);
         }
     }
 
     private async Task ActualizarListaTorneos(string deporte)
     {
-        torneos = await dataServiceInscripcion.GetTorneosSegunDeporte(deporte);
-        StateHasChanged();
+        try
+        {
+            torneosParaInscripcion = await dataServiceInscripcion.GetTorneosSegunDeporte(deporte);
+            // StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            toast.ShowError(ex.Message);
+        }
+
     }
 
     void CambioTorneo(ChangeEventArgs e)
     {
         int torneoSeleccionadoId = Int32.Parse(e.Value.ToString());
 
-        torneo = torneos.SingleOrDefault(s => s.Id == torneoSeleccionadoId);
-        torneo.Inscripciones.Clear();
-        torneo.Inscripciones.Add(equipo);
+        torneo = torneosParaInscripcion.SingleOrDefault(s => s.TorneoId == torneoSeleccionadoId);
     }
 
     private async Task Inscribir()
     {
         try
         {
-            if (torneo.Id > 0 && torneo.Inscripciones.Count > 0)
+            if (torneo  != null & equipo != null)
             {
-                var resultado = await dataServiceInscripcion.NuevaInscripcionATorneo(torneo);
+                ViewModelInscripcion vw = new()
+                    {
+                        TorneoId = torneo.TorneoId,
+                        NombreTorneo = torneo.Nombre,
+                        EquipoAInscribir = equipo
+            };
+
+            string resultado = await dataServiceInscripcion.NuevaInscripcionATorneo(vw);
+                toast.ShowSuccess(resultado);
             }
             else
             {

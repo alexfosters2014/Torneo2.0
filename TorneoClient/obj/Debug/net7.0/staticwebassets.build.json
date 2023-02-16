@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7hPK8t0mPObfypbQW/3C8LS/9lMMB235gudEN9X4D9E=",
+  "Hash": "SH0LLvG654rd11KoIdlvJcD81J8Ryrmw5urzpbmVTt4=",
   "Source": "TorneoClient",
   "BasePath": "/",
   "Mode": "Root",
@@ -3689,6 +3689,40 @@
       "OriginalItemSpec": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\Util\\bin\\Debug\\net7.0\\Util.pdb"
     },
     {
+      "Identity": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\_framework\\ViewModels.dll",
+      "SourceId": "TorneoClient",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/ViewModels.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\ViewModels\\bin\\Debug\\net7.0\\ViewModels.dll"
+    },
+    {
+      "Identity": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\_framework\\ViewModels.pdb",
+      "SourceId": "TorneoClient",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/ViewModels.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\ViewModels\\bin\\Debug\\net7.0\\ViewModels.pdb"
+    },
+    {
       "Identity": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\_framework\\WindowsBase.dll",
       "SourceId": "TorneoClient",
       "SourceType": "Computed",
@@ -4486,6 +4520,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Globalization.Extensions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\obj\\Debug\\net7.0\\build-gz\\cI3FMoyY.gz",
+      "SourceId": "TorneoClient",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/ViewModels.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\_framework\\ViewModels.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\_framework\\ViewModels.pdb"
     },
     {
       "Identity": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\obj\\Debug\\net7.0\\build-gz\\ciQveP4B.gz",
@@ -5659,6 +5710,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\obj\\Debug\\net7.0\\build-gz\\ly0uarYu.gz",
+      "SourceId": "TorneoClient",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/ViewModels.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\_framework\\ViewModels.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\bin\\Debug\\net7.0\\wwwroot\\_framework\\ViewModels.dll"
     },
     {
       "Identity": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\TorneoClient\\obj\\Debug\\net7.0\\build-gz\\lYgWicYr.gz",

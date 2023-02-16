@@ -18,6 +18,8 @@
             <td>Hasta</td>
             <td>Deporte</td>
             <td>Cantidad inscriptos</td>
+            <td>Puntaje Max</td>
+            <td>Sets Max</td>
             <td></td>
         </tr>
         <tr>
@@ -37,6 +39,8 @@
                     <td>@torneo.Hasta</td>
                     <td>@torneo.Deporte</td>
                     <td>@torneo.Inscripciones.Count</td>
+                    <td>@torneo.PuntajeMax</td>
+                    <td>@torneo.SetsMax</td>
                     <td><button class="buttonStyle" @onclick="() => AutomatizarFixture(torneo.Id)">Crear Fixture automático</button></td>
                 }
             }
@@ -65,6 +69,7 @@
     private async Task AutomatizarFixture(int torneoId)
     {
         Torneo torneoFixture = torneos.SingleOrDefault(s => s.Id == torneoId);
+        torneoFixture.Fixture = dataServiceTorneo.CrearFixtureAut(torneoFixture);
         //falta guardar el fixture en la base de datos
 
     }

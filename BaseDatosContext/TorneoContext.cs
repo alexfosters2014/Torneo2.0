@@ -7,6 +7,7 @@ namespace BaseDatosContext
     {
         public TorneoContext(DbContextOptions options) : base(options)
         {
+           // this.ChangeTracker.LazyLoadingEnabled = false;
         }
 
         public DbSet<Jugador> Jugadores { get; set; }

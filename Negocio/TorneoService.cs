@@ -2,12 +2,15 @@
 using Entidades;
 using FluentValidation.Results;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.Extensions.Azure;
 using Negocio.Validaciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ViewModels;
 
 namespace Negocio
 {
@@ -19,32 +22,43 @@ namespace Negocio
             _db = db;
         }
 
-        public async Task<List<Torneo>> GetTorneosDeporteInscripcion(string deporte)
+        public async Task<List<ViewModelTorneosInscripcion>> GetTorneosDeporteInscripcion(string deporte)
         {
-            return _db.Torneos.Include(i => i.Inscripciones)
-                              .Where(t => t.Deporte== deporte).ToList();
+            return await _db.Torneos.Where(t => t.Deporte == deporte)
+                              .Select(s => new ViewModelTorneosInscripcion()
+                              {
+                                    TorneoId = s.Id,
+                                    Nombre= s.Nombre,
+                              })
+                              .ToListAsync();
         }
 
-        public async Task<string> InscribirEquipo(Torneo torneo)
+        public async Task<List<Torneo>> GetTorneosNombre(string nombre)
+        {
+            return _db.Torneos.Include(i => i.Inscripciones)
+                              .Include(i => i.Fixture)
+                              .Where(t => t.Nombre.Contains(nombre.ToUpper())).ToList();
+        }
+
+        public async Task<string> InscribirEquipo(ViewModelInscripcion viewModelInscripcion)
         {
             try
             {
                 string mensajeError = "";
 
                 ValidadorInscripcion validacion = new(_db);
-                ValidationResult result = validacion.Validate(torneo);
+                ValidationResult result = validacion.Validate(viewModelInscripcion);
                 if (!result.IsValid)
                 {
                     result.Errors.ForEach(f => mensajeError += f.ErrorMessage);
                     throw new Exception(mensajeError);
                 }
 
-                var torneoDB = await _db.Torneos.Include(i => i.Inscripciones)
-                                                .SingleOrDefaultAsync(s=> s.Id == torneo.Id);
-
+                var torneoDB = await _db.Torneos.SingleOrDefaultAsync(s => s.Id == viewModelInscripcion.TorneoId);
+                                                
                 if (torneoDB == null) throw new Exception("no existe el torneo seleccionado");
 
-                torneoDB.Inscripciones.Add(torneo.Inscripciones[0]);
+                torneoDB.Inscripciones.Add(viewModelInscripcion.EquipoAInscribir);
                 await _db.SaveChangesAsync();
                 return "Felicidades, se ha inscripto satisfactoriamente al torneo " + torneoDB.Nombre;
             }
@@ -60,10 +74,10 @@ namespace Negocio
             {
                 string mensajeError = "";
 
-                torneo.Nombre.ToUpper().Trim();
-                torneo.Deporte.ToUpper().Trim();
-                torneo.Modalidad.ToUpper().Trim();
-                torneo.Fixture.ForEach(f => _db.Entry(f).State = EntityState.Added);
+                torneo.Nombre = torneo.Nombre.ToUpper().Trim();
+                torneo.Deporte = torneo.Deporte.ToUpper().Trim();
+                torneo.Modalidad = torneo.Modalidad.ToUpper().Trim();
+                //torneo.Fixture.ForEach(f => _db.Entry(f).State = EntityState.Added);
 
                 ValidadorTorneo validacion = new(_db);
                 ValidationResult result = validacion.Validate(torneo);

@@ -26,7 +26,7 @@ namespace Negocio
 
         public async Task<List<Equipo>> GetsEquiposPorNombre(string nombre)
         {
-            return await _db.Equipos.Where(w => w.NombreEquipo == nombre.ToUpper().Trim()).ToListAsync();
+            return await _db.Equipos.Where(w => w.NombreEquipo.Contains(nombre.ToUpper().Trim())).ToListAsync();
         }
 
         public async Task<int> NuevoEquipo(Equipo equipo)
@@ -34,6 +34,7 @@ namespace Negocio
             try
             {
                 string mensajeError = "";
+                equipo.NombreEquipo = equipo.NombreEquipo.ToUpper().Trim();
 
                 ValidadorEquipo validacion = new(_db);
                 ValidationResult result = validacion.Validate(equipo);
@@ -44,8 +45,6 @@ namespace Negocio
                 }
 
                 equipo.Jugadores.ForEach(jugador =>  _db.Entry(jugador).State = EntityState.Unchanged);
-
-                equipo.NombreEquipo.ToUpper().Trim();
 
                 var nuevo = await _db.AddAsync(equipo);
                 await _db.SaveChangesAsync();

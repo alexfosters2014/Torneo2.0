@@ -9,8 +9,8 @@ namespace Entidades
     public class Torneo
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string ImagenRef { get; set; }
+        public string Nombre { get; set; } = null!;
+        public string ImagenRef { get; set; } = null!;
         public List<Equipo> Inscripciones { get; set; } = new();
         public List<Partido> Fixture { get; set; } = new();
         public string Modalidad { get; set; } = null!;

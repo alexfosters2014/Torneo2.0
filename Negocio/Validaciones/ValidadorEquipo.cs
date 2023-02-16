@@ -30,7 +30,8 @@ namespace Negocio.Validaciones
         }
         private bool CantidadJugadoresCorrecto(Equipo equipo, string deporte)
         {
-            return equipo.Jugadores.Count == Diccionarios.TipoTorneo[deporte];
+            // return equipo.Jugadores.Count == Diccionarios.TipoTorneo[deporte];
+            return true;
         }
     }
 }

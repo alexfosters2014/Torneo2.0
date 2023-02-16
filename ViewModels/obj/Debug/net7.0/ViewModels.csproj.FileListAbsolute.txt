@@ -1,0 +1,15 @@
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\bin\Debug\net7.0\ViewModels.deps.json
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\bin\Debug\net7.0\ViewModels.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\bin\Debug\net7.0\ViewModels.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\bin\Debug\net7.0\Entidades.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\bin\Debug\net7.0\Entidades.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\ViewModels.csproj.AssemblyReference.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\ViewModels.AssemblyInfoInputs.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\ViewModels.AssemblyInfo.cs
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\ViewModels.csproj.CopyComplete
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\ViewModels.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\refint\ViewModels.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\ViewModels.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\ViewModels\obj\Debug\net7.0\ref\ViewModels.dll

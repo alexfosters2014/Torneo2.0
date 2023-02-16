@@ -18,7 +18,6 @@ namespace Negocio.Validaciones
             this._db = _db;
 
             RuleFor(t => t.Nombre).NotEmpty().WithMessage("El nombre no puede estar vacio").Must(TorneoNoExiste).WithMessage("Ya existe el torneo");
-            RuleFor(t => t.Fixture).NotEmpty().NotNull().WithMessage("Falta el fixture");
             RuleFor(t => t.Desde).NotNull().Must(ValidacionFecha).WithMessage("Los rangos de fechas son incorrectos");
             RuleFor(t => t.Deporte).NotEmpty().WithMessage("El campo deporte no puede estar vacio");
             RuleFor(t => t.SetsMax).GreaterThan(0).WithMessage("El set maáximo debe ser mayor a cero");
@@ -32,7 +31,7 @@ namespace Negocio.Validaciones
 
         private bool ValidacionFecha(Torneo torneo, DateTime desde)
         {
-            return !(desde.CompareTo(torneo.Hasta) <= 0 && desde.CompareTo(DateTime.Today) >= 0);
+            return (desde.CompareTo(torneo.Hasta) <= 0 && desde.CompareTo(DateTime.Today) >= 0);
         }
     }
 }

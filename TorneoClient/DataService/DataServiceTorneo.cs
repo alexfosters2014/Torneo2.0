@@ -159,9 +159,27 @@ namespace TorneoClient.DataService
         }
 
 
-        public async Task<List<Torneo>> GetTorneosVigentes(string nomobreTorneo)
+        public async Task<List<Torneo>> GetTorneosVigentes(string nombreTorneo)
         {
-            return new List<Torneo>();
+            try
+            {
+                var response = await _httpClient.GetAsync($"/Torneo/Get/{nombreTorneo}");
+                if (!response.IsSuccessStatusCode)
+                {
+                    var contentError = await response.Content.ReadAsStringAsync();
+                    var error = JsonConvert.DeserializeObject<string>(contentError);
+                    throw new Exception(error);
+                }
+
+                var content = await response.Content.ReadAsStringAsync();
+                var resultado = JsonConvert.DeserializeObject<List<Torneo>>(content);
+                return resultado;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
 

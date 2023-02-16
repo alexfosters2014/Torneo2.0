@@ -13,6 +13,6 @@ namespace Entidades
         public string Caratula { get; set; } = null!;
         public List<Jugador> Jugadores { get; set; } = new();
         public string Deporte { get; set; } = null!;
-        public List<Torneo> Torneos { get; set; }
+        public List<Torneo> Torneos { get; set; } = null!;
     }
 }

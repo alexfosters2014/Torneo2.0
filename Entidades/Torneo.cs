@@ -10,6 +10,7 @@ namespace Entidades
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
+        public string ImagenRef { get; set; }
         public List<Equipo> Inscripciones { get; set; } = new();
         public List<Partido> Fixture { get; set; } = new();
         public string Modalidad { get; set; } = null!;

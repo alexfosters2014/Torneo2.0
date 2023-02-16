@@ -22,6 +22,7 @@ builder.Services.AddScoped<DataServiceEquipo>();
 builder.Services.AddScoped<DataServiceImagen>();
 builder.Services.AddScoped<DataServiceJugador>();
 builder.Services.AddScoped<DataServiceInscripcion>();
+builder.Services.AddScoped<DataServiceTorneo>();
 
 
 await builder.Build().RunAsync();

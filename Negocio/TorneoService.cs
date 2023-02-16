@@ -53,5 +53,40 @@ namespace Negocio
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<int> CrearTorneo(Torneo torneo)
+        {
+            try
+            {
+                string mensajeError = "";
+
+                torneo.Nombre.ToUpper().Trim();
+                torneo.Deporte.ToUpper().Trim();
+                torneo.Modalidad.ToUpper().Trim();
+                torneo.Fixture.ForEach(f => _db.Entry(f).State = EntityState.Added);
+
+                ValidadorTorneo validacion = new(_db);
+                ValidationResult result = validacion.Validate(torneo);
+                if (!result.IsValid)
+                {
+                    result.Errors.ForEach(f => mensajeError += f.ErrorMessage);
+                    throw new Exception(mensajeError);
+                }
+
+                var nuevo = await _db.AddAsync(torneo);
+            await _db.SaveChangesAsync();
+
+            if (nuevo == null) throw new Exception("no se ha podido crear el torneo");
+
+                return nuevo.Entity.Id;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+
     }
 }

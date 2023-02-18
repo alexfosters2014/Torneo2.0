@@ -77,6 +77,8 @@ table.blueTable thead th {
     }
 
 .imagenEnListada{
-    height: 20px;
-    height:20px;
+    height: 60px;
+    height: 60px;
+    border-radius:5px;
+    border: 4px solid white;
 }

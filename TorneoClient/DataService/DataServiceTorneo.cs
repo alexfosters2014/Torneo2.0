@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Net.Http.Json;
+using ViewModels;
 
 namespace TorneoClient.DataService
 {
@@ -39,9 +40,9 @@ namespace TorneoClient.DataService
             }
         }
 
-        public List<Partido> CrearFixtureAut(Torneo torneo)
+        public List<PartidoVM> CrearFixtureAut(ViewModelTorneos torneo)
         {
-            List<Partido> partidos = new();
+            List<PartidoVM> partidos = new();
 
             switch (torneo.Modalidad)
             {
@@ -56,9 +57,9 @@ namespace TorneoClient.DataService
             return partidos;
         }
 
-        private List<Partido> CrearFixtureEliminacionDirecta(Torneo torneo)
+        private List<PartidoVM> CrearFixtureEliminacionDirecta(ViewModelTorneos torneo)
         {
-            List<Partido> fixture = new();
+            List<PartidoVM> fixture = new();
 
             int cantEquipos = torneo.Inscripciones.Count;
             int cantPartidos = cantEquipos - 1;
@@ -67,7 +68,7 @@ namespace TorneoClient.DataService
 
             torneo.Inscripciones.ForEach(equipo =>
             {
-                Partido partido = new()
+                PartidoVM partido = new()
                 {
                     Local = equipo,
                     Orden = 0,
@@ -97,19 +98,19 @@ namespace TorneoClient.DataService
 
 
 
-        private List<Partido> FixtureEDRecursivo(List<Partido> fixture, int ajustePrimeraRonda, int rondaActual, int jornadas)
+        private List<PartidoVM> FixtureEDRecursivo(List<PartidoVM> fixture, int ajustePrimeraRonda, int rondaActual, int jornadas)
         {
             int cantPartidos = fixture.Count;
             if (rondaActual > jornadas) return fixture;
 
-            List<Partido> auxFiltroFixture = new List<Partido>();
-            List<Partido> aux = new List<Partido>();
+            List<PartidoVM> auxFiltroFixture = new();
+            List<PartidoVM> aux = new();
 
             if (ajustePrimeraRonda > 0)
             {
                 for (int i = 0; i < cantPartidos - ajustePrimeraRonda; i += 2)
                 {
-                    Partido partido = new Partido()
+                    PartidoVM partido = new()
                     {
                         Local = fixture[i].Local,
                         Visitante = fixture[i + 1].Local,
@@ -122,7 +123,7 @@ namespace TorneoClient.DataService
                     fixture.Remove(fixture[i]);
                     fixture.Remove(fixture[i + 1]);
                 }
-                fixture.ForEach(f => f.Ronda = rondaActual);
+                fixture.ForEach(f => f.Ronda = 0);
                 aux.AddRange(fixture);
                 rondaActual++;
                 ajustePrimeraRonda = 0;
@@ -130,40 +131,66 @@ namespace TorneoClient.DataService
                 return FixtureEDRecursivo(aux, ajustePrimeraRonda, rondaActual, jornadas);
             }
 
-            auxFiltroFixture = fixture.Where(w => w.Ronda == rondaActual - 1).ToList();
 
-            int cantPartidosFiltrados = auxFiltroFixture.Count;
-
-            for (int i = 0; i < cantPartidos; i += 2)
+            if (fixture.Any(a => a.RondaDescanso == true))
             {
-                Partido partido = new()
+                for (int i = 0; i < cantPartidos; i += 2)
                 {
-                    Local = fixture[i].RondaDescanso ? fixture[i].Local : null,
-                    Visitante = fixture[i + 1].RondaDescanso ? fixture[i + 1].Local : null,
-                    Guid = Guid.NewGuid(),
-                    Ronda = rondaActual,
-                    RondaDescanso = false
-                };
-                auxFiltroFixture[i].PartidoSiguienteGuid = partido.Guid;
-                auxFiltroFixture[i + 1].PartidoSiguienteGuid = partido.Guid;
-                aux.Add(partido);
+                    PartidoVM partido = new()
+                    {
+                        Local = fixture[i].RondaDescanso ? fixture[i].Local : null,
+                        Visitante = fixture[i + 1].RondaDescanso ? fixture[i + 1].Local : null,
+                        Guid = Guid.NewGuid(),
+                        Ronda = rondaActual,
+                        RondaDescanso = false
+                    };
+                    fixture[i].PartidoSiguienteGuid = fixture[i].RondaDescanso ? Guid.Empty : partido.Guid;
+                    fixture[i + 1].PartidoSiguienteGuid = fixture[i+1].RondaDescanso ? Guid.Empty : partido.Guid;
+                    aux.Add(partido);
 
-
+                }
+                fixture.RemoveAll(r => r.RondaDescanso == true);
+                fixture.AddRange(aux);
+                rondaActual++;
+                return FixtureEDRecursivo(fixture, 0, rondaActual, jornadas);
             }
+            else
+            {
+                auxFiltroFixture = fixture.Where(w => w.Ronda == rondaActual - 1).ToList();
 
-            auxFiltroFixture.RemoveAll(r => r.RondaDescanso == true);
-            auxFiltroFixture.AddRange(aux);
-            rondaActual++;
-            return FixtureEDRecursivo(auxFiltroFixture, 0, rondaActual, jornadas);
+                int cantPartidosFiltrados = auxFiltroFixture.Count;
+
+                for (int i = 0; i < cantPartidosFiltrados; i += 2)
+                {
+                    PartidoVM partido = new()
+                    {
+                        Local = auxFiltroFixture[i].RondaDescanso ? auxFiltroFixture[i].Local : null,
+                        Visitante = auxFiltroFixture[i + 1].RondaDescanso ? auxFiltroFixture[i + 1].Local : null,
+                        Guid = Guid.NewGuid(),
+                        Ronda = rondaActual,
+                        RondaDescanso = false
+                    };
+                    auxFiltroFixture[i].PartidoSiguienteGuid = partido.Guid;
+                    auxFiltroFixture[i + 1].PartidoSiguienteGuid = partido.Guid;
+                    aux.Add(partido);
+                }
+
+                fixture.RemoveAll(r => r.Ronda == rondaActual - 1);
+                fixture.AddRange(auxFiltroFixture);
+                fixture.AddRange(aux);
+
+                rondaActual++;
+                return FixtureEDRecursivo(fixture, 0, rondaActual, jornadas);
+            }
+           
 
         }
 
-
-        public async Task<List<Torneo>> GetTorneosVigentes(string nombreTorneo)
+        public async Task<List<ViewModelTorneos>> GetTorneosVigentes()
         {
             try
             {
-                var response = await _httpClient.GetAsync($"/Torneo/Get/{nombreTorneo}");
+                var response = await _httpClient.GetAsync("/Torneo/Get/Vigentes");
                 if (!response.IsSuccessStatusCode)
                 {
                     var contentError = await response.Content.ReadAsStringAsync();
@@ -172,7 +199,7 @@ namespace TorneoClient.DataService
                 }
 
                 var content = await response.Content.ReadAsStringAsync();
-                var resultado = JsonConvert.DeserializeObject<List<Torneo>>(content);
+                var resultado = JsonConvert.DeserializeObject<List<ViewModelTorneos>>(content);
                 return resultado;
 
             }
@@ -181,6 +208,29 @@ namespace TorneoClient.DataService
                 throw new Exception(ex.Message);
             }
         }
+
+        //public async Task<List<Torneo>> GetTorneosVigentes(string nombreTorneo)
+        //{
+        //    try
+        //    {
+        //        var response = await _httpClient.GetAsync($"/Torneo/Get/{nombreTorneo}");
+        //        if (!response.IsSuccessStatusCode)
+        //        {
+        //            var contentError = await response.Content.ReadAsStringAsync();
+        //            var error = JsonConvert.DeserializeObject<string>(contentError);
+        //            throw new Exception(error);
+        //        }
+
+        //        var content = await response.Content.ReadAsStringAsync();
+        //        var resultado = JsonConvert.DeserializeObject<List<Torneo>>(content);
+        //        return resultado;
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception(ex.Message);
+        //    }
+        //}
 
 
 

@@ -10,6 +10,7 @@ namespace TorneoWebApi.EndPoints
         {
             app.MapGet("/Torneo/Get/Inscripcion/{deporte}", GetTorneosPorDeporteInscripcion);
             app.MapGet("/Torneo/Get/Nombre/{nombre}", GetTorneosPorNombre);
+            app.MapGet("/Torneo/Get/Vigentes", GetTorneosVigentes);
             app.MapPost("/Torneo/Inscripcion", InscribirEquipoATorneo);
             app.MapPost("/Torneo/Crear", CrearTorneo);
         }
@@ -33,7 +34,22 @@ namespace TorneoWebApi.EndPoints
         {
             try
             {
-                var resultado = await torneoService.GetTorneosNombre(nombre);
+                var resultado = await torneoService.GetTorneosVigentes();
+                if (resultado == null) return Results.BadRequest("No hay torneos a mostrar");
+
+                return Results.Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
+
+        public static async Task<IResult> GetTorneosVigentes(TorneoService torneoService)
+        {
+            try
+            {
+                var resultado = await torneoService.GetTorneosVigentes();
                 if (resultado == null) return Results.BadRequest("El torneo no está ingresado en el sistema");
 
                 return Results.Ok(resultado);

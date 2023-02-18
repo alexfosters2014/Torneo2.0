@@ -1,3 +1,9 @@
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.csproj.AssemblyReference.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.AssemblyInfoInputs.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.AssemblyInfo.cs
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.csproj.CoreCompileInputs.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\blazor.boot.json
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Blazored.Modal.dll
@@ -208,6 +214,8 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwro
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\TorneoClient.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Util.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Util.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\ViewModels.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\ViewModels.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\WindowsBase.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\System.Runtime.CompilerServices.VisualC.dll.gz
@@ -255,6 +263,7 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwro
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\icudt_EFIGS.dat.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.dll.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\System.Globalization.Extensions.dll.gz
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\ViewModels.pdb.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\System.Net.NameResolution.dll.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\System.IO.Compression.FileSystem.dll.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\System.Net.Sockets.dll.gz
@@ -324,6 +333,7 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwro
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\dotnet.wasm.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Util.dll.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.dll.gz
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\ViewModels.dll.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\System.Private.Xml.Linq.dll.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Web.dll.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\System.Diagnostics.Contracts.dll.gz
@@ -627,14 +637,10 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\icudt
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\icudt_no_CJK.dat
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\Entidades.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\Util.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\ViewModels.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\Entidades.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\Util.pdb
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.csproj.AssemblyReference.cache
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.AssemblyInfoInputs.cache
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.AssemblyInfo.cs
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.csproj.CoreCompileInputs.cache
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\ViewModels.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\I3OV0RtH.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\hJSPyT8I.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\LumbfvAC.gz
@@ -840,8 +846,10 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\mOjhciVv.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\TuiHfPWt.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\LgcUk7gv.gz
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\ly0uarYu.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\v+n9mY8x.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\5z3csy0j.gz
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\cI3FMoyY.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\6AKC5MHV.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\VL8N+bSm.gz
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\6HhSHqFr.gz
@@ -862,11 +870,3 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\Torne
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\refint\TorneoClient.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\TorneoClient.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\ref\TorneoClient.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\ViewModels.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\ViewModels.pdb
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\ViewModels.pdb.gz
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\wwwroot\_framework\ViewModels.dll.gz
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\ViewModels.dll
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\bin\Debug\net7.0\ViewModels.pdb
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\ly0uarYu.gz
-C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\TorneoClient\obj\Debug\net7.0\build-gz\cI3FMoyY.gz

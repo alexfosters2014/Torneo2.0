@@ -22,15 +22,44 @@ namespace Negocio
             _db = db;
         }
 
-        public async Task<List<ViewModelTorneosInscripcion>> GetTorneosDeporteInscripcion(string deporte)
+        public async Task<List<ViewModelTorneos>> GetTorneosDeporteInscripcion(string deporte)
         {
             return await _db.Torneos.Where(t => t.Deporte == deporte)
-                              .Select(s => new ViewModelTorneosInscripcion()
+                              .Select(s => new ViewModelTorneos()
                               {
-                                    TorneoId = s.Id,
+                                    Id = s.Id,
                                     Nombre= s.Nombre,
                               })
                               .ToListAsync();
+
+
+        }
+
+        public async Task<List<ViewModelTorneos>> GetTorneosVigentes()
+        {
+            var torneos = await _db.Torneos.Where(w => w.Desde >= DateTime.Today)
+                                     .Select(s => new ViewModelTorneos()
+                                     {
+                                         Id = s.Id,
+                                         Nombre = s.Nombre,
+                                         ImagenRef = s.ImagenRef,
+                                         Modalidad = s.Modalidad,
+                                         SetsMax = s.SetsMax,
+                                         PuntajeMax = s.PuntajeMax,
+                                         Deporte = s.Deporte,
+                                         Desde = s.Desde,
+                                         Hasta = s.Hasta,
+                                         Fixture = new List<PartidoVM>(),
+                                         Inscripciones = s.Inscripciones.Select(inscripcion => new EquipoVM()
+                                         {
+                                             Id= inscripcion.Id,
+                                             NombreEquipo = inscripcion.NombreEquipo,
+                                             Caratula = inscripcion.Caratula,
+                                             Deporte= inscripcion.Deporte
+                                         }).ToList()
+                                     }).ToListAsync();
+
+            return torneos;
         }
 
         public async Task<List<Torneo>> GetTorneosNombre(string nombre)

@@ -24,7 +24,7 @@
                                <option value="0" selected>Seleccionar un torneo</option>
                             @foreach (var torneo in torneosParaInscripcion)
                             {
-                               <option value="@torneo.TorneoId">@torneo.Nombre</option>
+                               <option value="@torneo.Id">@torneo.Nombre</option>
                             }
                     </select>
             </td>
@@ -42,9 +42,9 @@
 
     [CascadingParameter] IModalService Modal { get; set; } = default!;
 
-    List<ViewModelTorneosInscripcion> torneosParaInscripcion = new();
+    List<ViewModelTorneos> torneosParaInscripcion = new();
 
-    ViewModelTorneosInscripcion torneo = new();
+    ViewModelTorneos torneo = new();
     Equipo equipo =new();
 
 
@@ -80,7 +80,7 @@
     {
         int torneoSeleccionadoId = Int32.Parse(e.Value.ToString());
 
-        torneo = torneosParaInscripcion.SingleOrDefault(s => s.TorneoId == torneoSeleccionadoId);
+        torneo = torneosParaInscripcion.SingleOrDefault(s => s.Id == torneoSeleccionadoId);
     }
 
     private async Task Inscribir()
@@ -91,7 +91,7 @@
             {
                 ViewModelInscripcion vw = new()
                     {
-                        TorneoId = torneo.TorneoId,
+                        TorneoId = torneo.Id,
                         NombreTorneo = torneo.Nombre,
                         EquipoAInscribir = equipo
             };

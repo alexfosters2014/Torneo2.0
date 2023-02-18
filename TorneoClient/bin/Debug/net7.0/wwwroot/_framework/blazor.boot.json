@@ -205,19 +205,19 @@
       "mscorlib.dll": "sha256-T52Qf1cS\/UysEoWOoE2ptEJEXfGpanQX5KNLyDiLv1E=",
       "netstandard.dll": "sha256-p32h5P3QmHJ\/FGoeE6m7f5g\/8ng2PSPGZktHyMadvIs=",
       "System.Private.CoreLib.dll": "sha256-6MwQcyKbqBsoZYOcD9fQJ4iKcn1qMmWRWVEkU2LLCb0=",
-      "Entidades.dll": "sha256-GK6BK8TiPA5ijd+avGQ54rWqgkCI8ojEUOrsOUbVgmo=",
+      "Entidades.dll": "sha256-uFY094k3qQMGizBYcIyLAkuU\/j4nWzxV6WhVvkC4ZZY=",
       "Util.dll": "sha256-5uFr13fK9gPELKPk1hrAgxyMP9Fz+XdeificmNp0d18=",
-      "ViewModels.dll": "sha256-OZebZzzrI7wJKT+xbD381clzpnQMfE5b0OZo21aoe4o=",
-      "TorneoClient.dll": "sha256-byBWNZVTSsDZWHCgPp1KY0QO0L9Zc2I3AbEXe7cJCxw="
+      "ViewModels.dll": "sha256-MI+7ZTF\/Z9O1P2HdYtBp2lsrjjieQcsGDv+tmUs4aXA=",
+      "TorneoClient.dll": "sha256-jwFHSOrjzyVDQAXhFC03K4hAI5ZyNeNbQRPR1KhQH50="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Entidades.pdb": "sha256-EBEBngb9kGgVtgMGFuOv\/DfAR2cEIKMEK5l5cJo1UWw=",
+      "Entidades.pdb": "sha256-\/PRGxdI1xdCGJLNyJhEBgfe3P5C\/swZ3TPX+firq1AA=",
       "Util.pdb": "sha256-8dl9eKK4mlfIPUCQVOE2\/An2SQfV8KCA7PX4Ef42QUk=",
-      "ViewModels.pdb": "sha256-2+yzgHE524FQa6ReYCdzf7OPEHFIDnavT+hBrAxUwfc=",
-      "TorneoClient.pdb": "sha256-SuELWSAc3rWHtkC\/5gbftWZ33WjgCWTywB3V\/d0maM4="
+      "ViewModels.pdb": "sha256-MENEOAevI\/Sysczq9JHKR0dS9aj8Mev9PUNCzr3DE+Y=",
+      "TorneoClient.pdb": "sha256-+CuxzBY\/7+Ccxt\/+R46KtVaQxo2W+9NuTGXP6rRmI9g="
     },
     "runtime": {
       "dotnet.7.0.2.h472s9d0n7.js": "sha256-4mh03qTse0uNR+dQ6ydExm4jJXph0RE8zGNCtF0jiNA=",

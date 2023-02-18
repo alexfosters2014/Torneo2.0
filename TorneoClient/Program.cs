@@ -15,7 +15,7 @@ builder.Services.AddBlazoredModal();
 builder.Services.AddBlazoredToast();
 builder.Services.AddMudServices();
 
-string backendUrlLocal = builder.Configuration.GetValue<string>("DefaultConnectionWebApi"); //pasarlo al aoppsetting.json
+string backendUrlLocal = builder.Configuration.GetValue<string>("DefaultConnectionWebApi");
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Configuration.GetValue<string>("DefaultConnectionWebApi")) });
 

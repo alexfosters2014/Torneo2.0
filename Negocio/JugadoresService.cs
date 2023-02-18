@@ -31,15 +31,16 @@ namespace Negocio
             {
                 string mensajeError = "";
 
+                jugador.Nombres = jugador.Nombres.ToUpper().Trim();
+                jugador.Apellidos = jugador.Apellidos.ToUpper().Trim();
+                jugador.Cedula = jugador.Cedula.Trim();
+
                 ValidadorJugador validacion = new(_db);
                 ValidationResult result = validacion.Validate(jugador);
                 if (!result.IsValid) {
                     result.Errors.ForEach(f => mensajeError += f.ErrorMessage);
                     throw new Exception(mensajeError);
                 }
-                jugador.Nombres.ToUpper().Trim();
-                jugador.Apellidos.ToUpper().Trim();
-                jugador.Cedula.Trim();
 
                 var nuevoJugador = await _db.AddAsync(jugador);
                 await _db.SaveChangesAsync();

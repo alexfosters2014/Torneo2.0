@@ -31,15 +31,12 @@ namespace BaseDatosContext.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Caratula")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Deporte")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NombreEquipo")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -56,18 +53,15 @@ namespace BaseDatosContext.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Apellidos")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Cedula")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("FechaNacimiento")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Nombres")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -86,15 +80,16 @@ namespace BaseDatosContext.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
+                    b.Property<Guid>("Guid")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("HistorialPartido")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("LocalId")
                         .HasColumnType("int");
 
                     b.Property<string>("Lugar")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MarcadorLocal")
@@ -104,14 +99,22 @@ namespace BaseDatosContext.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("NombreCancha")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PartidoSiguienteId")
+                    b.Property<int>("Orden")
                         .HasColumnType("int");
+
+                    b.Property<Guid>("PartidoSiguienteGuid")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Posición")
                         .HasColumnType("int");
+
+                    b.Property<int>("Ronda")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("RondaDescanso")
+                        .HasColumnType("bit");
 
                     b.Property<int>("SetActual")
                         .HasColumnType("int");
@@ -122,7 +125,7 @@ namespace BaseDatosContext.Migrations
                     b.Property<int>("SetsGanadosVisitante")
                         .HasColumnType("int");
 
-                    b.Property<int>("TorneoId")
+                    b.Property<int?>("TorneoId")
                         .HasColumnType("int");
 
                     b.Property<int>("VisitanteId")
@@ -148,7 +151,6 @@ namespace BaseDatosContext.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Deporte")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Desde")
@@ -157,8 +159,13 @@ namespace BaseDatosContext.Migrations
                     b.Property<DateTime>("Hasta")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("ImagenRef")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Modalidad")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PuntajeMax")
@@ -181,7 +188,6 @@ namespace BaseDatosContext.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("NombreCompleto")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -229,9 +235,7 @@ namespace BaseDatosContext.Migrations
 
                     b.HasOne("Entidades.Torneo", "Torneo")
                         .WithMany("Fixture")
-                        .HasForeignKey("TorneoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TorneoId");
 
                     b.HasOne("Entidades.Equipo", "Visitante")
                         .WithMany()

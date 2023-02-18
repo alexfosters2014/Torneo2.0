@@ -25,7 +25,6 @@ namespace Negocio.Validaciones
             RuleFor(jug => jug.Nombres).NotEmpty().WithMessage("Debe ingresar un nombre");
             RuleFor(jug => jug.Apellidos).NotEmpty().WithMessage("Debe ingresar un apellido");
             RuleFor(jug => jug.FechaNacimiento).NotNull().NotEmpty().Must(ValidarEdad).WithMessage("La edad está fuera de rango");
-
         }
 
         private bool ValidarCedula(string cedula)

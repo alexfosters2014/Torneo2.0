@@ -19,10 +19,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj" />
     <ProjectReference Include="..\Util\Util.csproj" />
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Componentes\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 

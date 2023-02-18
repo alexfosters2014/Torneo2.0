@@ -4,8 +4,10 @@ C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\bin\Debug\net7.0\Negocio.pd
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\bin\Debug\net7.0\BaseDatosContext.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\bin\Debug\net7.0\Entidades.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\bin\Debug\net7.0\Util.dll
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\bin\Debug\net7.0\ViewModels.dll
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\bin\Debug\net7.0\BaseDatosContext.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\bin\Debug\net7.0\Util.pdb
+C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\bin\Debug\net7.0\ViewModels.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\bin\Debug\net7.0\Entidades.pdb
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\obj\Debug\net7.0\Negocio.csproj.AssemblyReference.cache
 C:\Users\alexf\OneDrive\Escritorio\Torneo2.0\Negocio\obj\Debug\net7.0\Negocio.GeneratedMSBuildEditorConfig.editorconfig

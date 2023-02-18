@@ -1371,7 +1371,8 @@
           "BaseDatosContext": "1.0.0",
           "FluentValidation": "11.4.0",
           "FluentValidation.AspNetCore": "11.2.2",
-          "Util": "1.0.0"
+          "Util": "1.0.0",
+          "ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Negocio.dll": {}
@@ -1388,6 +1389,19 @@
         },
         "runtime": {
           "bin/placeholder/Util.dll": {}
+        }
+      },
+      "ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ViewModels.dll": {}
         }
       }
     }
@@ -4186,6 +4200,11 @@
       "type": "project",
       "path": "../Util/Util.csproj",
       "msbuildProject": "../Util/Util.csproj"
+    },
+    "ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../ViewModels/ViewModels.csproj",
+      "msbuildProject": "../ViewModels/ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4196,7 +4215,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
       "Negocio >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4237,6 +4257,9 @@
             },
             "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\Negocio\\Negocio.csproj": {
               "projectPath": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\Negocio\\Negocio.csproj"
+            },
+            "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "C:\\Users\\alexf\\OneDrive\\Escritorio\\Torneo2.0\\ViewModels\\ViewModels.csproj"
             }
           }
         }

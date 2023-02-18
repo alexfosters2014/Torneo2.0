@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.2",
           "Negocio": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "TorneoWebApi.dll": {}
@@ -759,7 +760,8 @@
           "BaseDatosContext": "1.0.0",
           "FluentValidation": "11.4.0",
           "FluentValidation.AspNetCore": "11.2.2",
-          "Util": "1.0.0"
+          "Util": "1.0.0",
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "Negocio.dll": {}
@@ -768,6 +770,14 @@
       "Util/1.0.0": {
         "runtime": {
           "Util.dll": {}
+        }
+      },
+      "ViewModels/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "runtime": {
+          "ViewModels.dll": {}
         }
       }
     }
@@ -1354,6 +1364,11 @@
       "sha512": ""
     },
     "Util/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

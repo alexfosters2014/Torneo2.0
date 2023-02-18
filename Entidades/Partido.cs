@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entidades
 {
@@ -22,12 +17,18 @@ namespace Entidades
         public int SetsGanadosLocal { get; set; }
         public int SetsGanadosVisitante { get; set; }
         public int SetActual { get; set; }
-        public int PartidoSiguienteId { get; set; }
+        public Guid PartidoSiguienteGuid { get; set; }
         public Torneo Torneo { get; set; } = new();
-        public string NombreCancha { get; set; } = null!;
+        public string NombreCancha { get; set; }
         public DateTime Fecha { get; set; }
         public int Posición { get; set; }
-        public string HistorialPartido { get; set; } = null!;
+        public string HistorialPartido { get; set; }
         public string Lugar { get; set; }
+
+
+        public int Orden { get; set; }
+        public int Ronda { get; set; }
+        public Guid Guid { get; set; }
+        public bool RondaDescanso { get; set; }
     }
 }

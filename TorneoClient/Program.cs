@@ -10,17 +10,20 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
+
 builder.Services.AddBlazoredModal();
 builder.Services.AddBlazoredToast();
 builder.Services.AddMudServices();
 
-string backendUrlLocal = builder.Configuration.GetValue<string>("DefaultConnectionWebApi"); //pasarlo al aoppsetting.json
+string backendUrlLocal = builder.Configuration.GetValue<string>("DefaultConnectionWebApi");
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Configuration.GetValue<string>("DefaultConnectionWebApi")) });
 
 builder.Services.AddScoped<DataServiceEquipo>();
 builder.Services.AddScoped<DataServiceImagen>();
 builder.Services.AddScoped<DataServiceJugador>();
+builder.Services.AddScoped<DataServiceInscripcion>();
+builder.Services.AddScoped<DataServiceTorneo>();
 
 
 await builder.Build().RunAsync();

@@ -9,6 +9,7 @@ namespace TorneoWebApi.EndPoints
         {
             app.MapGet("/Equipo/Get/{id}", GetEquipo);
             app.MapPost("/Equipo/Nuevo", NuevoEquipo);
+            app.MapGet("/Equipo/Get/Find/{nombre}", GetsEquiposPorNombre);
         }
 
         public static async Task<IResult> GetEquipo(int id, EquiposService equipoService)
@@ -16,6 +17,21 @@ namespace TorneoWebApi.EndPoints
             try
             {
                 var resultado = await equipoService.GetEquipo(id);
+                if (resultado == null) return Results.BadRequest("El equipo no está ingresado en el sistema");
+
+                return Results.Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
+
+        public static async Task<IResult> GetsEquiposPorNombre(string nombre, EquiposService equipoService)
+        {
+            try
+            {
+                var resultado = await equipoService.GetsEquiposPorNombre(nombre);
                 if (resultado == null) return Results.BadRequest("El equipo no está ingresado en el sistema");
 
                 return Results.Ok(resultado);
